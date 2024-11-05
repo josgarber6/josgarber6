@@ -1,0 +1,26 @@
+---
+const EXPERIENCE = [
+  {
+    date: 'Junio 2017 - Actualidad',
+    title: 'DJ y productor musical',
+    description: 'Realización tanto de eventos privados como de fiestas en discotecas y terrazas de Sevilla y Huelva.'
+  },
+  // {
+  //   date: 'April 2022',
+  //   title: 'E-Commerce UI code in Tailwind CSS',
+  //   description: 'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.'
+  // }
+]
+import ExperienceItem from './ExperienceItem.astro'
+---
+<ol class="relative border-s dark:border-gray-700 ml-3">
+  <div>
+  {
+    EXPERIENCE.map((experience) => (
+        <li class="mb-10 ms-4">
+          <ExperienceItem {...experience} />
+        </li>      
+      ))
+    }
+  </div>
+</ol>

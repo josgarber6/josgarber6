@@ -1,19 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
 import SocialPill from '../components/SocialPill.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import EmailIcon from '../components/icons/Email.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Briefcase2 from '../components/icons/Briefcase2.astro';
 ---
 
 <Layout 
 	title="Portfolio de José María García Berdejo | Ingeniero Software y Desarrollador Web"
 	description="Contrata a José María García Berdejo para crear tu página o aplicación web. Ingeniero Software y Desarrollador Web."
 >
-	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-14">
+	<main class="px-4">
+		<SectionContainer class="py-14">
 			<div class="img-linkeding">
 				<img 
 					class="rounded-full size-20"
@@ -26,18 +28,18 @@ import EmailIcon from '../components/icons/Email.astro';
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</div>
-			<h1 class="text-slate-800 text-5xl font-bold flex flex-row gap-x-4 pb-4 py-4">
+			<h1 class="text-slate-800 text-3xl lg:text-5xl md:text-4xl font-bold flex flex-row gap-x-4 pb-2 lg:pb-4 py-4">
 				Hola, soy José María 
 			</h1>
-			<h2 class="text-2xl opacity-80">
+			<h2 class="text-xl lg:text-xl opacity-80 text-wrap max-w-[700px]">
 				Soy una persona trabajadora y responsable, <span class="text-red-700/100 font-bold">capaz de conseguir cualquier 
 				objetivo que me proponga.</span> Me considero una persona <span class="text-slate-800/100 font-bold"> amable, resolutiva </span>y con 
 				<span class="text-slate-800/100 font-bold"> capacidad </span> para <span class="text-slate-800/100 font-bold"> trabajar en equipo. </span> Me entusiasma la tecnología y la 
 				programación, pero sobre todo me encanta aprender y compartir conocimientos.
-					Mis intereses actuales dentro del ámbito del software son <span class="text-yellow-50">el desarrollo web y la ciberseguridad.
+					Mis intereses actuales dentro del ámbito del software son <span class="text-white font-semibold">el desarrollo web y la ciberseguridad.
 				</span>
 			</h2>
-			<nav class="flex gap-x-3 pt-6">
+			<nav class="flex gap-3 pt-6 flex-wrap">
 				<SocialPill href="https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-garc%C3%ADa-berdejo-9022052b2/">
 					<LinkedInIcon class="size-5"/>
 						LinkedIn
@@ -51,7 +53,16 @@ import EmailIcon from '../components/icons/Email.astro';
 					 Contáctame
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+		<SectionContainer id="experiencia">
+			<div class="flex flex-row items-center pb-5">
+				<Briefcase2 class="size-7"/>
+				<h1 class="text-3xl font-semibold text-slate-800 p-4">
+					Experiencia Laboral
+				</h1>
+			</div>
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>
 

@@ -1,24 +1,22 @@
+---
+import BriefcaseIcon from '../components/icons/Briefcase.astro'
+---
+
 <span class="rotating-border hover:scale-105 transition">
   <div class="
   inline-flex items-center justify-center
   w-full px-3 py-1 rounded-full
   bg-red-100
-  dark:bg-slate-50/100 text-slate-800/100 text-xl
+  dark:bg-slate-50/100 text-slate-800/100 text-[17px]
   cursor-pointer
   whitespace-nowrap
   backdrop-blur-3xl">
-    <img src="https://svgsilh.com/svg/43978.svg" alt="maleta" class="maleta" />
+    <BriefcaseIcon alt="maleta" class="flex flex-auto mr-2 size-4"/>
     <slot/>
   </div>
 </span>
 
 <style>
-  .maleta {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    flex: auto;
-  }
   .rotating-border {
     position: relative;
     display: inline-flex;
