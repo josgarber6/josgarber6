@@ -1,0 +1,33 @@
+---
+const EDUCATION = [
+  {
+    date: 'Septiembre 2024 - Actualmente',
+    title: 'Preparación Certificación OSCP - Offensive Security Certified Professional',
+    place: 'TryHackMe, HackTheBox, VulnHub, etc.',
+    img: '/cyber.png'
+  },
+  {
+    date: 'Octubre 2020 - Julio 2024',
+    title: 'Grado en Ing. Informática - Ing. del Software',
+    place: 'Universidad de Sevilla',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/ETSI_Inform%C3%A1tica_Sevilla_y_DrupalCamp_Spain_2011.jpg/1200px-ETSI_Inform%C3%A1tica_Sevilla_y_DrupalCamp_Spain_2011.jpg'
+  },
+  {
+    date: '30/07/2021',
+    title: 'First Certificate in English (FCE) B2',
+    place: 'Cambridge English Language Assessment',
+    img: 'https://lh3.googleusercontent.com/p/AF1QipPLIL07jI5LJhxGVHVS1V50Hu22c29y7dEFF9Gd=s1360-w1360-h1020'
+  }
+]
+import EducationItem from './EducationItem.astro'
+---
+<div class="relative flex flex-col justify-end items-end w-full">
+  <div class="absolute right-0 top-0 bottom-0 w-1 border-l border-white dark:border-gray-700"></div>
+  {
+    EDUCATION.map((education) => (
+      <div class="mb-10 me-4 w-full">
+          <EducationItem {...education} />
+      </div>
+      ))
+  }
+</div>

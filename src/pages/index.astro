@@ -8,6 +8,9 @@ import EmailIcon from '../components/icons/Email.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Briefcase2 from '../components/icons/Briefcase2.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Education from '../components/Education.astro';
+import GraduateIcon from '../components/icons/Graduate.astro';
 ---
 
 <Layout 
@@ -36,7 +39,7 @@ import Briefcase2 from '../components/icons/Briefcase2.astro';
 				objetivo que me proponga.</span> Me considero una persona <span class="text-slate-800/100 font-bold"> amable, resolutiva </span>y con 
 				<span class="text-slate-800/100 font-bold"> capacidad </span> para <span class="text-slate-800/100 font-bold"> trabajar en equipo. </span> Me entusiasma la tecnología y la 
 				programación, pero sobre todo me encanta aprender y compartir conocimientos.
-					Mis intereses actuales dentro del ámbito del software son <span class="text-white font-semibold">el desarrollo web y la ciberseguridad.
+					Mis intereses actuales dentro del ámbito del software son <span class="text-slate-900 font-bold">el desarrollo web y la ciberseguridad.
 				</span>
 			</h2>
 			<nav class="flex gap-3 pt-6 flex-wrap">
@@ -62,6 +65,16 @@ import Briefcase2 from '../components/icons/Briefcase2.astro';
 				</h1>
 			</div>
 			<Experience />
+		</SectionContainer>
+		<SectionContainer id="formacion">
+			<div class="flex flex-row items-center pt-10 pb-5">
+				<GraduateIcon class="size-7"/>
+				<h1 class="text-3xl font-semibold text-slate-800 p-4 py-0">
+					Formación Académica
+				</h1>
+			</div>
+			<h2 class="text-[16px] font-normal text-slate-800 dark:text-gray-900 italic text-center pb-5">Última actualización 03/07/2024</h2>
+			<Education />
 		</SectionContainer>
 	</main>
 </Layout>
