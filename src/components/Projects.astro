@@ -1,0 +1,227 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import HTML from "./icons/HTML.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Django from "./icons/Django.astro"
+import VueJS from "./icons/VueJS.astro"
+import CSS from "./icons/CSS.astro"
+import FastAPI from "./icons/FastAPI.astro"
+import MongoDB from "./icons/MongoDB.astro"
+import Swagger from "./icons/Swagger.astro"
+import Docker from "./icons/Docker.astro"
+import Spring from "./icons/Spring.astro"
+import ExpressJS from "./icons/ExpressJS.astro"
+import React from "./icons/React.astro"
+import Vite from "./icons/Vite.astro"
+import Vitest from "./icons/Vitest.astro"
+import LinkButton from "./LinkButton.astro"
+import FileIcon from "./icons/FileIcon.astro"
+import LinkIcon from "./icons/LinkIcon.astro"
+import VideoIcon from "./icons/VideoIcon.astro"
+
+
+const TAGS = {
+  HTML: {
+    name: 'HTML',
+    class: 'bg-[#ebebeb] text-black',
+    icon: HTML
+  },
+  TAILWIND: {
+    name: 'Tailwind CSS',
+    class: 'bg-[#003159] text-white',
+    icon: Tailwind
+  },
+  JAVASCRIPT: {
+    name: 'JavaScript',
+    class: 'bg-[#f0db4f] text-black',
+    icon: JavaScript
+  },
+  DJANGO: {
+    name: 'Django',
+    class: 'bg-[#092e20] text-white',
+    icon: Django
+  },
+  VUEJS: {
+    name: 'Vue.js',
+    class: 'bg-[#42b883] text-white',
+    icon: VueJS
+  },
+  CSS: {
+    name: 'CSS',
+    class: 'bg-[#003159] text-white',
+    icon: CSS
+  },
+  FASTAPI: {
+    name: 'FastAPI',
+    class: 'bg-[#ebebeb] text-black',
+    icon: FastAPI
+  },
+  MONGODB: {
+    name: 'MongoDB',
+    class: 'bg-[#13aa52] text-white',
+    icon: MongoDB
+  },
+  SWAGGER: {
+    name: 'Swagger',
+    class: 'bg-[#85ea2d] text-black',
+    icon: Swagger
+  },
+  DOCKER: {
+    name: 'Docker',
+    class: 'bg-[#008fe2] text-white',
+    icon: Docker
+  },
+  SPRING: {
+    name: 'Spring',
+    class: 'bg-[#ebebeb] text-black',
+    icon: Spring
+  },
+  EXPRESSJS: {
+    name: 'Express.js',
+    class: 'bg-[#303030] text-white',
+    icon: ExpressJS
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-[#00D8FF] text-black',
+    icon: React
+  },
+  VITE: {
+    name: 'Vite',
+    class: 'bg-[#646CFF] text-white',
+    icon: Vite
+  },
+  VITEST: {
+    name: 'Vitest',
+    class: 'bg-white text-[#729B1B]',
+    icon: Vitest
+  },
+}
+
+const PROJECTS = [
+  {
+    title: 'Porfolio',
+    description: 'Desarrollo de mi porfolio personal con el que me presento a las empresas de una forma más cercana y profesional.',
+    img: '/porfolio.webp',
+    link: 'https://josemariagb02.vercel.app/',
+    github: 'https://github.com/josgarber6/josemariagb02',
+    tags: [TAGS.HTML, TAGS.TAILWIND, TAGS.JAVASCRIPT]
+  },
+  {
+    title: 'Panadería Sánchez (TFG)',
+    description: 'Desarrollo individual de una aplicación web de e-commerce con la que una panadería pueda gestionar los pedidos y los productos online que los clientes pueden solicitar.',
+    img: '/panaderia.webp',
+    github: 'https://github.com/josgarber6/panaderia',
+    file: './TFG_Josgarber6.pdf',
+    demo: 'https://youtu.be/-X_TdJdYsEc',
+    tags: [TAGS.DJANGO, TAGS.VUEJS, TAGS.VITE, TAGS.VITEST, TAGS.CSS, TAGS.DOCKER]
+  },
+  {
+    title: 'Harmony LTD',
+    description: 'Proyecto para la asignatura de Ingeniería del Software y Práctica Profesional de la Universidad de Sevilla. Se realizó un sistema de información para dos organizaciones sin ánimo de lucro (Asociación Tertulia Cofrade Cirio y Costal y Asociación Ciudadana de Ayuda al Toxicómano). Mi papel en el proyecto fue el de Desarrollador Backend y realizar las presentaciones semanales del proyecto, además de editar los vídeos publiciarios que debíamos mostrar a los clientes.',
+    img: '/ispp.webp',
+    link: 'https://htld-doc.vercel.app/',
+    github: 'https://github.com/orgs/ISPP-07/repositories',
+    demo: 'https://youtu.be/quNfNjMIrCQ',
+    ad1: 'https://youtu.be/h9XiLwQxuFw',
+    ad2: 'https://youtu.be/MCgkb54RaIk',
+    tags: [TAGS.FASTAPI, TAGS.MONGODB, TAGS.SWAGGER]
+  },
+  {
+    title: 'Decide',
+    description: 'Aportación a la plataforma de voto electrónica "decide" para la asignatura de Evolución y Gestión de la Configuración. Mi papel en este proyecto fue el de Desarrollador Backend y Frontend, creador de la imagen de la página de inicio y editor del vídeo de la demo que se le mostró al profesorado.',
+    img: '/decide.webp',
+    link: 'https://github.com/EGC-23-24/decide-part-lorca/wiki/Documento-del-proyecto',
+    github: 'https://github.com/EGC-23-24/decide-part-lorca',
+    tags: [TAGS.DJANGO, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.TAILWIND, TAGS.DOCKER]
+  },
+  {
+    title: 'Virus!',
+    description: 'Implementación de un conocido juego de mesa para la asignatura Diseño y Pruebas 1. Mi papel en el proyecto fue el de Desarrollador Backend y Frontend, y editor de los vídeos que se tuvieron que realizar para mostrar las reglas del juego al inicio del proyecto y posteriormente la jugabilidad de la aplicación web creada.',
+    img: '/virus.webp',
+    github: 'https://github.com/gii-is-DP1/dp1-2022-2023-l3-4',
+    tags: [TAGS.SPRING, TAGS.HTML, TAGS.CSS]
+  },
+  {
+    title: 'DeliverUS',
+    description: 'Proyecto para la asignatura Introducción a la Ingeniería del Software y los Sistemas de Información 2. Su objetivo era crear una aplicación web para gestionar pedidos en los restaurantes de la zona de Reina Mercedes, muy similar a la que realiza la conocida aplicación Deliveroo. Mi papel en el proyecto fue el de Desarrollador Backend y Frontend.',
+    github: 'https://github.com/josgarber6/DeliverUS-Backend',
+    github2: 'https://github.com/josgarber6/DeliverUS-Frontend',
+    tags: [TAGS.EXPRESSJS, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.CSS]
+  }
+]
+---
+
+<div class="flex flex-col w-full">
+  <div class="grid grid-rows-1 gap-4">
+    {PROJECTS.map(({ title, description, link, github, github2, file, demo, ad1, ad2, img, tags }) => (
+      <div class="flex flex-col bg-white/10 rounded-lg shadow-md p-4 hover:scale-105 transition">
+        {img && (<img src={img} class="rounded-lg w-full h-48 object-cover" />)
+        }
+        <div class="flex flex-col gap-2 mt-4">
+          <h3 class="text-xl text-slate-800 font-bold">{title}</h3>
+          <p class="text-slate-900 font-normal">{description}</p>
+          <div class="flex flex-row gap-2">
+            {tags.map((tag) => (
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+            >
+              <tag.icon class="size-4" />
+              {tag.name}
+            </span>
+          ))}
+          </div>
+          <div class="flex flex-row gap-2 mt-4">
+            {!github2 &&
+              <LinkButton href={github}>
+                <GitHub class="size-4"/>
+                  Code
+              </LinkButton>
+            }
+            {github2 && (
+              <LinkButton href={github}>
+                <GitHub class="size-4"/>
+                Backend
+              </LinkButton>
+              <LinkButton href={github2}>
+                <GitHub class="size-4"/>
+                Frontend
+              </LinkButton>
+            )}
+            {link && (
+              <LinkButton href={link}>
+                <LinkIcon class="size-4"/>
+                Preview
+              </LinkButton>
+            )}
+            {file && (
+              <LinkButton href={file}>
+              <FileIcon class="size-4"/>
+                File
+              </LinkButton>
+            )}
+            {demo && (
+              <LinkButton href={demo}>
+                <VideoIcon class="size-4"/>
+                Demo
+              </LinkButton>
+            )}
+            {ad1 && (
+              <LinkButton href={ad1}>
+                <VideoIcon class="size-4"/>
+                Investors Add
+              </LinkButton>
+            )}
+            {ad2 && (
+              <LinkButton href={ad2}>
+                <VideoIcon class="size-4"/>
+                Users Add
+              </LinkButton>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

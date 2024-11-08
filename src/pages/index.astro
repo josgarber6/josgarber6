@@ -11,12 +11,13 @@ import Briefcase2 from '../components/icons/Briefcase2.astro';
 import CodeIcon from '../components/icons/Code.astro';
 import Education from '../components/Education.astro';
 import GraduateIcon from '../components/icons/Graduate.astro';
+import Projects from '../components/Projects.astro';
 import UserIcon from '../components/icons/User.astro';
 import About from '../components/About.astro';
 ---
 
 <Layout 
-	title="Portfolio de José María García Berdejo | Ingeniero Software y Desarrollador Web"
+	title="Porfolio de José María García Berdejo | Ingeniero Software y Desarrollador Web"
 	description="Contrata a José María García Berdejo para crear tu página o aplicación web. Ingeniero Software y Desarrollador Web."
 >
 	<main class="px-4">
@@ -77,6 +78,15 @@ import About from '../components/About.astro';
 			</div>
 			<h2 class="text-[16px] font-normal text-slate-800 dark:text-gray-900 italic text-center pb-10">Última actualización 03/07/2024</h2>
 			<Education />
+		</SectionContainer>
+		<SectionContainer id="proyectos">
+			<div class="flex flex-row items-center pt-10 pb-5">
+				<CodeIcon class="size-7"/>
+				<h1 class="text-3xl font-semibold text-slate-800 p-4 py-0">
+					Proyectos
+				</h1>
+			</div>
+			<Projects />
 		</SectionContainer>
 		<SectionContainer id="sobre-mi">
 			<div class="flex flex-row items-center pt-10 pb-5">
