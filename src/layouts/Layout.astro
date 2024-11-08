@@ -21,9 +21,11 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="relative text-black dark:text-white">
 		<!-- Fondo del portfolio -->
-		<div class="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_100%_at_50%_10%,#ddd_15%,#52595d_100%)]"/>
+		<div class="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-gray-950 [background:radial-gradient(125%_100%_at_50%_10%,#ddd_15%,#8a959c_100%)]
+		dark:bg-[radial-gradient(125%_100%_at_50%_10%,#52595d_15%,#37393b_100%)]">
+		</div>
 		<Header />
 		<slot />
 		<Footer/>
