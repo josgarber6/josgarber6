@@ -40,4 +40,12 @@ import BriefcaseIcon from '../components/icons/Briefcase.astro'
     animation: spin 4s linear infinite;
     z-index: -1;
   }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
