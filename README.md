@@ -12,7 +12,7 @@
         <br>
         <img align="center" width="100" src="./public/josemariagb02pic.webp"/>
         <br>
-        <img src="https://readme-typing-svg.demolab.com?font=Onest&weight=500&pause=300&color=B91C1C&center=true&multiline=true&width=435&height=70&lines=Junior+Software+Engineer;passionate+about+efficient+solutions+%F0%9F%92%BB" alt="Typing SVG" />
+        <img src="https://readme-typing-svg.demolab.com?font=Onest&weight=500&pause=300&color=B91C1C&center=true&multiline=true&width=435&height=70&lines=Junior+Software+Engineer;Passionate+about+efficient+solutions+%F0%9F%92%BB" alt="Typing SVG" />
         <h5>Welcome to my GitHub profile! I hope you find what you are looking for</h5>
         <h5>If you need help, don't hesitate to contact me clicking
            <a href="mailto:josemariagb02@gmail.com?subject=Consulta%20desde%20GitHub&body=Escribe%20aquí%20tu%20cuerpo">here</a>
